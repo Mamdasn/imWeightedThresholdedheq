@@ -1,6 +1,6 @@
+include *.in
+include *.txt
 include LICENSE
-recursive-include assets *.gif
 recursive-include assets *.jpg
-recursive-include assets *.mp4
 recursive-include src *.py
 recursive-include tests *.py
