@@ -28,7 +28,7 @@ def imWTHeq(image, Wout_list=np.zeros((10)), r=0.5, v=0.5):
 
 
     Wout = min(255, Gmax*Win)
-    if np.where(Wout_list>0)[0].size==10:
+    if np.where(Wout_list>0)[0].size==Wout_list.size:
         Wout = (np.sum(Wout_list)+Wout) / (1+Wout_list.size)
 
     F = image.copy().reshape(-1)
