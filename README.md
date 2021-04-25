@@ -53,7 +53,7 @@ video_out.release()
 ```
 
 ## Showcase
-* for a full video showcase click on the GIF  
+* A 5 minutes comparative video: https://youtu.be/5H_EY_ugmzg
 * This is a sample video  
 [![Arctic-Convoy-With-Giant-Mack-Trucks.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks.gif "Arctic-Convoy-With-Giant-Mack-Trucks.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
 The sample video enhanced by WTHE method  
