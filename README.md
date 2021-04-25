@@ -53,8 +53,8 @@ video_out.release()
 ```
 
 ## Showcase
-This is a sample video  
+* for a full video showcase click on the GIF  
+* This is a sample video  
 [![Arctic-Convoy-With-Giant-Mack-Trucks.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks.gif "Arctic-Convoy-With-Giant-Mack-Trucks.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
 The sample video enhanced by WTHE method  
 [![Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.gif "Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
-*for a full video showcase click on the GIF*  
