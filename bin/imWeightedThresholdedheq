@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+
+import numpy as np
+import cv2
+import os
+import argparse
+from imWeightedThresholdedheq import imWTHeq
+
+
+parser = argparse.ArgumentParser(
+    description=" Pixelate your photos with triangles rather than squares."
+)
+parser.add_argument(
+    '--input',
+    type=str,
+    help='the path to the source image file to be processed',
+    required=True
+)
+parser.add_argument(
+    '--output', type=str, help='the path to the result file', required=True
+)
+parser.add_argument(
+    '--r', type=float, help='r', required=False
+)
+parser.add_argument(
+    '--v', type=float, help='v', required=False
+)
+
+args = parser.parse_args()
+
+# input section
+img_fullname = os.path.realpath(args.input)
+result_fullname = args.output
+v = args.v if args.v else 0.5
+r = args.r if args.r else 0.5
+
+# function section
+image = cv2.imread(img_fullname)
+image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+image_v = image_hsv[:, :, 2].copy()
+image_v_WTHeq, _ = imWTHeq(image_v, r=r, v=v)
+image_hsv[:, :, 2] = image_v_WTHeq.copy()
+result = cv2.cvtColor(image_hsv, cv2.COLOR_HSV2BGR)
+
+# write the image into output
+cv2.imwrite(result_fullname, result)

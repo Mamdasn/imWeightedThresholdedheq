@@ -2,18 +2,23 @@ import numpy as np
 import cv2
 from imWeightedThresholdedheq import imWTHeq 
 
-cap = cv2.VideoCapture('assets/Arctic-Convoy-With-Giant-Mack-Trucks.mp4')
+#cap = cv2.VideoCapture('assets/video_2021-04-30_17-50-30.mp4')
+cap = cv2.VideoCapture('assets/I SLAV AND LOST-1n7cV5veMIo-crpped.mkv')
 
 # video without sound
 video_out_name = 'assets/output-imWeightedThresholdedheq.mp4'
+video_out_name = 'assets/I SLAV AND LOST-1n7cV5veMIo-crpped-imWeightedThresholdedheq.mp4'
 
 i = 0
 j = 0
+length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 Wout_list = np.zeros((10))
 while(cap.isOpened()):
     ret, frame = cap.read()
     if ret == False:
         break
+    print("\r", 100*i//length, "%", end='')
+
     frame_hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     frame_v   = frame_hsv[:, :, 2].copy()
     image_heq, Wout = imWTHeq(frame_v, Wout_list, r=0.5, v=0.5)

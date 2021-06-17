@@ -50,7 +50,13 @@ while(cap.isOpened()):
     i+=1
 cv2.destroyAllWindows()
 video_out.release()
+```  
+Or  
+```Bash
+imWeightedThresholdedheq --input 'Plane.jpg' --output 'Plane-imWeightedThresholdedheq.jpg'
 ```
+
+
 
 ## Showcase
 * A 5 minutes comparative video: https://youtu.be/5H_EY_ugmzg

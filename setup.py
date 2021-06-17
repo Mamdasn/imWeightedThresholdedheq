@@ -10,7 +10,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 
 setup(
     name='imWeightedThresholdedheq',
-    version='0.0.4',
+    version='0.0.5',
     author="mamdasn s",
     author_email="<mamdassn@gmail.com>",
     url="https://github.com/Mamdasn/imWeightedThresholdedheq",
@@ -31,5 +31,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
-    ]
+    ],
+    scripts=['bin/imWeightedThresholdedheq'],
 )
