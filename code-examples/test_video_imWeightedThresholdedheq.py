@@ -44,4 +44,3 @@ while(cap.isOpened()):
 
     i+=1
 cv2.destroyAllWindows()
-video_out.release()
