@@ -22,7 +22,7 @@ from imWeightedThresholdedheq import imWTHeq
 cap = cv2.VideoCapture('assets/Arctic-Convoy-With-Giant-Mack-Trucks.mp4')
 
 # output video without sound
-video_out_name = 'assets/output.mp4'
+video_out_name = 'assets/Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.mp4'
 i = 0
 j = 0
 Wout_list = np.zeros((10))
@@ -60,7 +60,5 @@ imWeightedThresholdedheq --input 'Plane.jpg' --output 'Plane-imWeightedThreshold
 
 ## Showcase
 * A 5 minutes comparative video: https://youtu.be/5H_EY_ugmzg
-* This is a sample video  
-[![Arctic-Convoy-With-Giant-Mack-Trucks.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks.gif "Arctic-Convoy-With-Giant-Mack-Trucks.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
-The sample video enhanced by WTHE method  
-[![Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.gif "Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
+* A sample video and its enhanced version by WTHE method  
+[![Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif "Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
