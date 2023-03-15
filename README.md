@@ -1,3 +1,8 @@
+[![PyPI Latest Release](https://img.shields.io/pypi/v/imWeightedThresholdedheq.svg)](https://pypi.org/project/imWeightedThresholdedheq/)
+[![Package Status](https://img.shields.io/pypi/status/imWeightedThresholdedheq.svg)](https://pypi.org/project/imWeightedThresholdedheq/)
+[![Downloads](https://pepy.tech/badge/imWeightedThresholdedheq)](https://pepy.tech/project/imWeightedThresholdedheq)
+[![License](https://img.shields.io/pypi/l/imWeightedThresholdedheq.svg)](https://github.com/Mamdasn/imWeightedThresholdedheq/blob/main/LICENSE)
+
 # imWeightedThresholdedheq
 This module attempts to enhance contrast of a given image or video by employing a method called weighted thresholded histogram equalization (WTHE). This method seeks to improve on preformance of the conventional histogram equalization method by adding controllable parameters to it. By weighting and thresholding the PMF of the image before performing histogram equalization, two parameters are introduced that can be changed manually, but by experimenting on a variety of images, optimal values for both parameters are calculated (r = 0.5, v = 0.5).
 
