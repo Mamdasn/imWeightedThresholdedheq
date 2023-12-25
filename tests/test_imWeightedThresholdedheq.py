@@ -4,7 +4,7 @@ from imWeightedThresholdedheq import imWTHeq
 
 
 def test_im2dhisteq_with_param():
-    image_name = "../assets/Plane.jpg"
+    image_name = "assets/Plane.jpg"
     image = cv2.imread(image_name)
 
     image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
