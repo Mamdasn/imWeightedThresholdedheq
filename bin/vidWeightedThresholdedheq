@@ -43,13 +43,8 @@ def extract_audio(video_file, audio_file):
 
 def add_audio(video_file, audio_file, output_file):
     command = ['ffmpeg', '-hide_banner', '-loglevel', 'error',  '-i', video_file, '-i', audio_file, '-c', 'copy', '-map', '0:v:0', '-map', '1:a:0', output_file]
-    try:
-        subprocess.run(command, check=True)
-    except subprocess.CalledProcessError as e:
-        print("Error:", e)
-        print("Output:", e.output)
+    subprocess.run(command, check=True)
 
-extract_audio(video_address, audio_output)
 
 cap = cv2.VideoCapture(video_address)
 
@@ -90,4 +85,5 @@ cv2.destroyAllWindows()
 cap.release()
 video_out.release()
 
+extract_audio(video_address, audio_output)
 add_audio(video_output, audio_output, video_output_audio)
