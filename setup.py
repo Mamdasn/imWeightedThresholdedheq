@@ -10,7 +10,7 @@ with codecs.open(os.path.join(parent_dir, "README.md"), encoding="utf-8") as rea
 
 setup(
     name="imWeightedThresholdedheq",
-    version="1.0.0",
+    version="1.0.1",
     author="mamdasn s",
     author_email="<mamdassn@gmail.com>",
     url="https://github.com/Mamdasn/imWeightedThresholdedheq",
@@ -40,5 +40,5 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
     ],
-    scripts=["bin/imWeightedThresholdedheq"],
+    scripts=["bin/imWeightedThresholdedheq", "bin/vidWeightedThresholdedheq"],
 )
