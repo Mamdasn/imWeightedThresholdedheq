@@ -20,9 +20,6 @@ parser.add_argument(
 parser.add_argument(
     '--output', type=str, help='the path to the result file', required=True
 )
-parser.add_argument(
-    '--w', type=int, help='width of the square window used for calculating the 2d histogram', required=False
-)
 
 args = parser.parse_args()
 
@@ -32,7 +29,6 @@ video_address = os.path.realpath(args.input)
 video_output       = args.output
 video_output_audio = f"{video_output[0:video_output.rfind('.')]}-audio.mp4"
 audio_output       = f"{video_output[0:video_output.rfind('.')]}.mp3"
-width = args.w if args.w else 6
 
 
 # function section
