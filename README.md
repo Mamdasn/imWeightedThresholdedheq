@@ -8,7 +8,7 @@
 # imWeightedThresholdedheq
 This module attempts to enhance contrast of a given image or video by employing a method called weighted thresholded histogram equalization (WTHE). This method seeks to improve on preformance of the conventional histogram equalization method by adding controllable parameters to it. By weighting and thresholding the PMF of the image before performing histogram equalization, two parameters are introduced that can be changed manually, but by experimenting on a variety of images, optimal values for both parameters are calculated (r = 0.5, v = 0.5).
 
-You can access the article that came up with this method [here](https://www.researchgate.net/publication/3183125_Ward_RK_Fast_ImageVideo_Contrast_Enhancement_Based_on_Weighted_Thresholded_Histogram_Equalization_IEEE_Trans_Consumer_Electronics_532_757-764).  
+You can access the article that came up with this method [here](https://www.researchgate.net/publication/3183125_Ward_RK_Fast_ImageVideo_Contrast_Enhancement_Based_on_Weighted_Thresholded_Histogram_Equalization_IEEE_Trans_Consumer_Electronics_532_757-764).
 
 
 ## Installation
@@ -21,10 +21,19 @@ pip install imWeightedThresholdedheq
 
 ## Usage
 
-```python
+For images
+```Bash
+imWeightedThresholdedheq --input 'Plane.jpg' --output 'Plane-imWeightedThresholdedheq.jpg'
+```
+For videos
+```Bash
+vid2dhisteq --input 'assets/Arctic-Convoy-With-Giant-Mack-Trucks.mp4' --output 'assets/Arctic-Convoy-With-Giant-Mack-Trucks-imWeightedThresholdedheq.mp4'
+```
+Or
+```Python
 import numpy as np
 import cv2
-from imWeightedThresholdedheq import imWTHeq 
+from imWeightedThresholdedheq import imWTHeq
 
 cap = cv2.VideoCapture('assets/Arctic-Convoy-With-Giant-Mack-Trucks.mp4')
 
@@ -57,15 +66,10 @@ while(cap.isOpened()):
     i+=1
 cv2.destroyAllWindows()
 video_out.release()
-```  
-Or  
-```Bash
-imWeightedThresholdedheq --input 'Plane.jpg' --output 'Plane-imWeightedThresholdedheq.jpg'
 ```
-
 
 
 ## Showcase
 * A 5 minutes comparative video: https://youtu.be/5H_EY_ugmzg
-* A sample video and its enhanced version by WTHE method  
-[![Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif "Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif GIF")](https://youtu.be/5H_EY_ugmzg)  
+* A sample video and its enhanced version by WTHE method
+[![Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif GIF](https://raw.githubusercontent.com/Mamdasn/imWeightedThresholdedheq/main/assets/Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif "Arctic-Convoy-With-Giant-Mack-Trucks-Orig-Heq.gif GIF")](https://youtu.be/5H_EY_ugmzg)
