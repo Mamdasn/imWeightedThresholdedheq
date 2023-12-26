@@ -10,7 +10,7 @@ with codecs.open(os.path.join(parent_dir, "README.md"), encoding="utf-8") as rea
 
 setup(
     name="imWeightedThresholdedheq",
-    version="1.0.1",
+    version="1.0.2",
     author="mamdasn s",
     author_email="<mamdassn@gmail.com>",
     url="https://github.com/Mamdasn/imWeightedThresholdedheq",
@@ -23,6 +23,8 @@ setup(
     install_requires=[
         "numpy",
         "numba",
+        "opencv-python",
+        "tqdm",
     ],
     keywords=[
         "python",
